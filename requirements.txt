@@ -1,0 +1,16 @@
+# Core runtime
+onnxruntime-qnn ; platform_system == "Windows"   # Qualcomm QNN Execution Provider build
+onnxruntime ; platform_system != "Windows"        # fallback for dev on non-Snapdragon machines
+numpy
+sounddevice        # microphone capture
+soundfile
+
+# UI
+PySide6
+
+# Audio / speech utilities
+librosa
+webrtcvad           # voice-activity detection to segment speech
+
+# Storage
+# (sqlite3 is part of the Python standard library — no install needed)
